@@ -26,14 +26,14 @@ export default function Contact() {
         <Reveal delay={120}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:hello@rddlans.online?subject=Project%20inquiry%20—%20rddlans.online"
+              href="mailto:founder@rrdlabs.online?subject=Project%20inquiry%20—%20rddlans.online"
               className="animate-pulse-ring inline-flex items-center gap-2.5 rounded-md bg-neon px-7 py-4 font-mono text-sm font-bold uppercase tracking-[0.14em] text-void transition hover:bg-white"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="5" width="18" height="14" rx="2.5" />
                 <path d="M3 7l9 6 9-6" />
               </svg>
-              hello@rddlans.online
+              founder@rrdlabs.online
             </a>
             <a
               href="https://github.com/rrdlabs"

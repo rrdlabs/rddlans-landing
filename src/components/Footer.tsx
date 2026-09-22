@@ -23,7 +23,7 @@ const columns = [
     title: "Elsewhere",
     links: [
       { label: "GitHub", href: "https://github.com/rrdlabs" },
-      { label: "Contact", href: "mailto:hello@rddlans.online" },
+      { label: "Contact", href: "mailto:founder@rrdlabs.online" },
       { label: "Back to top", href: "#top" },
     ],
   },
