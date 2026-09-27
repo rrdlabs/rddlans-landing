@@ -52,7 +52,7 @@ const steps = [
 
 export default function Approach() {
   return (
-    <section id="approach" className="relative mx-auto max-w-6xl scroll-mt-24 px-6 py-24 md:py-32">
+    <section className="mx-auto max-w-6xl px-6 py-14 md:py-16">
       <SectionHeading
         eyebrow="How we work"
         title={

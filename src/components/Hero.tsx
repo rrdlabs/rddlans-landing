@@ -1,8 +1,15 @@
 const stats = [
-  { value: "10,000+", label: "active Spider nodes" },
-  { value: "1M+", label: "searches processed" },
-  { value: "21", label: "E2E flows tested" },
-  { value: "99.9%", label: "uptime, in production" },
+  { value: "Live", label: "decentralized crawler network" },
+  { value: "Shipped", label: "offline-first PWA in production" },
+  { value: "Hardened", label: "security pass on every build" },
+  { value: "In-house", label: "no templates, no hand-offs" },
+];
+
+const trust = [
+  { t: "Free quotes", s: "no obligation, ever" },
+  { t: "Fixed price", s: "before a line of code ships" },
+  { t: "1-day replies", s: "to every inquiry" },
+  { t: "Security pass", s: "on every single build" },
 ];
 
 export default function Hero() {
@@ -27,10 +34,8 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
-              rddlans.online is an independent R&amp;D studio. We design and ship
-              custom mobile &amp; web apps, run security research and penetration
-              testing, and engineer bespoke electronics and firmware — end to end,
-              to production, rarely off the shelf.
+              An independent R&amp;D studio building mobile, web and embedded
+              software — and the security research to keep it standing.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -77,7 +82,7 @@ export default function Hero() {
                   service worker offline-first <span className="text-volt">...ok</span>
                 </p>
                 <p className="text-mist">
-                  <span className="text-volt">$</span> rdd scan --target rddlans.online
+                  <span className="text-volt">$</span> rdd scan --target rrdlabs.online
                 </p>
                 <p className="pl-4 text-mist/80">
                   [443] tls/1.3 <span className="text-cyber-rose">open</span> · [22] ssh <span className="text-cyber-rose">open</span>
@@ -112,6 +117,20 @@ export default function Hero() {
               <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.16em] text-mist/70">
                 {s.label}
               </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-edge bg-edge lg:grid-cols-4">
+          {trust.map((c) => (
+            <div key={c.t} className="flex items-center gap-3 bg-abyss px-5 py-4">
+              <svg className="shrink-0 text-neon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <p className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-white">{c.t}</p>
+                <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-mist/60">{c.s}</p>
+              </div>
             </div>
           ))}
         </div>

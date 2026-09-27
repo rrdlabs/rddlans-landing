@@ -207,6 +207,116 @@ body {
   animation: sweep 5s ease-in-out infinite;
 }
 
+/* ---------- cinematic intro ---------- */
+
+.intro-scene {
+  opacity: 0;
+  transform: translateY(16px) scale(0.99);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+  pointer-events: none;
+}
+
+.intro-scene.is-active {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes intro-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.intro-progress {
+  animation-name: intro-progress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.intro-slam {
+  animation: intro-slam 0.7s cubic-bezier(0.18, 0.9, 0.3, 1.35) 0.25s both;
+}
+
+@keyframes intro-slam {
+  0% {
+    transform: translateY(-80px) scale(1.7);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.intro-stamp {
+  animation: intro-stamp 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.5) 0.9s both;
+}
+
+@keyframes intro-stamp {
+  0% {
+    transform: scale(3) rotate(-16deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(-6deg);
+    opacity: 1;
+  }
+}
+
+.intro-rise {
+  transform-origin: bottom;
+  animation: intro-rise 0.8s cubic-bezier(0.2, 0.8, 0.3, 1) 0.4s both;
+}
+
+@keyframes intro-rise {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.intro-line {
+  opacity: 0;
+  animation: intro-line 0.45s ease both;
+}
+
+@keyframes intro-line {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.intro-pin-ring {
+  transform-origin: center;
+  animation: intro-pin-ring 2.2s ease-out infinite;
+}
+
+@keyframes intro-pin-ring {
+  0% {
+    transform: scale(0.35);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
 /* ---------- reduced motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {

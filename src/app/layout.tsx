@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "rddlans.online — Custom Software, Security Research & Hardware",
+  title: "rrdlabs.online — Custom Software, Security Research & Hardware",
   description:
     "Ranger-Andrews Research & Development. Custom mobile & web apps, security research and penetration testing, and custom electronics & firmware. Recent work: Spider Protocol and BCW Mobile.",
   keywords: [
@@ -30,19 +30,22 @@ export const metadata: Metadata = {
     "custom electronics",
     "ESP32",
     "freelance engineer",
-    "rddlans",
+    "rrdlabs",
+    "pro bono app development",
+    "free apps for charities",
+    "Saskatoon web development",
   ],
   openGraph: {
-    title: "rddlans.online — Custom Software, Security Research & Hardware",
+    title: "rrdlabs.online — Custom Software, Security Research & Hardware",
     description:
       "Custom mobile & web apps, security research and penetration testing, and custom electronics & firmware. Recent work: Spider Protocol and BCW Mobile.",
-    url: "https://rddlans.online",
-    siteName: "rddlans.online",
+    url: "https://rrdlabs.online",
+    siteName: "rrdlabs.online",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "rddlans.online — Custom Software, Security Research & Hardware",
+    title: "rrdlabs.online — Custom Software, Security Research & Hardware",
     description:
       "Custom mobile & web apps, security research and penetration testing, and custom electronics & firmware.",
   },

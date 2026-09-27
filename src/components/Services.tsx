@@ -99,7 +99,7 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative mx-auto max-w-6xl scroll-mt-24 px-6 py-24 md:py-32">
+    <section className="mx-auto max-w-6xl px-6 py-14 md:py-16">
       <div className="pointer-events-none absolute right-0 top-0 h-80 w-80 rounded-full bg-cyber-violet/8 blur-[130px]" />
       <SectionHeading
         eyebrow="What we do"

@@ -6,6 +6,7 @@ const links = [
   { href: "#services", label: "Services" },
   { href: "#projects", label: "Work" },
   { href: "#approach", label: "Approach" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -34,7 +35,7 @@ export default function Navbar() {
             R
           </span>
           <span className="font-mono text-sm tracking-tight text-mist">
-            rddlans<span className="text-neon">.</span>online
+            rrdlabs<span className="text-neon">.</span>online
           </span>
         </a>
 

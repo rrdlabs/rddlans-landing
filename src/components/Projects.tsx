@@ -103,6 +103,190 @@ function BcwArt() {
   );
 }
 
+function CodpetArt() {
+  return (
+    <svg viewBox="0 0 420 340" className="h-full w-full" aria-hidden="true">
+      <defs>
+        <linearGradient id="codBg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#171030" />
+          <stop offset="100%" stopColor="#0a0716" />
+        </linearGradient>
+        <linearGradient id="codScreen" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#2b1b52" />
+          <stop offset="100%" stopColor="#170f2e" />
+        </linearGradient>
+      </defs>
+      <rect width="420" height="340" fill="url(#codBg)" rx="14" />
+      <circle cx="60" cy="280" r="80" fill="#a78bfa" opacity="0.12" />
+      <circle cx="370" cy="50" r="70" fill="#22d3ee" opacity="0.08" />
+
+      <g transform="translate(96 22)">
+        <rect x="0" y="0" width="228" height="296" rx="26" fill="#0b0714" stroke="#33295c" strokeWidth="2" />
+        <rect x="86" y="8" width="56" height="7" rx="3.5" fill="#33295c" />
+        <rect x="14" y="28" width="200" height="214" rx="18" fill="url(#codScreen)" />
+        <g>
+          <line x1="114" y1="52" x2="96" y2="34" stroke="#22d3ee" strokeWidth="3.5" strokeLinecap="round">
+            <animate attributeName="x2" values="96;100;96" dur="3.5s" repeatCount="indefinite" />
+            <animate attributeName="y2" values="34;30;34" dur="3.5s" repeatCount="indefinite" />
+          </line>
+          <circle cx="96" cy="32" r="5" fill="#22d3ee">
+            <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite" />
+          </circle>
+          <path
+            d="M114 96c-14 0-24 4-32 12-6-10-14-20-26-26 6 12 8 22 6 34-8 4-12 12-12 22 0 18 16 28 40 28s40-10 40-28c0-8-3-16-10-22-2-12 0-24 6-36-10 8-16 18-20 28-4-4-8-8-12-12z"
+            fill="#a78bfa"
+          >
+            <animate attributeName="transform" attributeType="XML" type="translate" values="0 0;0 -4;0 0" dur="2.2s" repeatCount="indefinite" />
+          </path>
+          <ellipse cx="104" cy="104" rx="7" ry="8" fill="#0b0714">
+            <animate attributeName="ry" values="8;1;8" dur="3.2s" begin="1.2s" repeatCount="indefinite" />
+          </ellipse>
+          <ellipse cx="128" cy="104" rx="7" ry="8" fill="#0b0714">
+            <animate attributeName="ry" values="8;1;8" dur="3.2s" begin="1.2s" repeatCount="indefinite" />
+          </ellipse>
+          <circle cx="106" cy="105" r="2.4" fill="#22d3ee" />
+          <circle cx="130" cy="105" r="2.4" fill="#22d3ee" />
+          <path d="M110 122q8 8 16 0" stroke="#0b0714" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+          <g>
+            <rect x="150" y="52" width="54" height="24" rx="12" fill="#22d3ee" opacity="0.92">
+              <animate attributeName="opacity" values="0.92;0;0.92" dur="4.2s" begin="0.8s" repeatCount="indefinite" />
+            </rect>
+            <text x="177" y="67" textAnchor="middle" fontSize="10" fontFamily="monospace" fontWeight="700" fill="#0b0714">
+              <animate attributeName="opacity" values="1;0;1" dur="4.2s" begin="0.8s" repeatCount="indefinite" />
+              hi!
+            </text>
+          </g>
+        </g>
+        <g>
+          <rect x="20" y="196" width="112" height="30" rx="8" fill="#241640" />
+          <text x="34" y="214" fontSize="9" fontFamily="monospace" fill="#d7c5f5">mood</text>
+          <rect x="84" y="203" width="20" height="7" rx="3.5" fill="#a78bfa">
+            <animate attributeName="width" values="20;34;20" dur="5s" repeatCount="indefinite" />
+          </rect>
+          <rect x="138" y="196" width="62" height="30" rx="8" fill="#241640" />
+          <text x="169" y="214" textAnchor="middle" fontSize="9" fontFamily="monospace" fill="#d7c5f5">openai</text>
+        </g>
+        <rect x="14" y="240" width="200" height="42" rx="12" fill="#100a20" stroke="#33295c" strokeWidth="1.5" />
+        <text x="114" y="266" textAnchor="middle" fontSize="10" fontFamily="monospace" fill="#a78bfa">
+          lvgl · esp-idf · on-device AI
+        </text>
+      </g>
+    </svg>
+  );
+}
+
+function ExposedArt() {
+  return (
+    <svg viewBox="0 0 420 340" className="h-full w-full" aria-hidden="true">
+      <defs>
+        <linearGradient id="expBg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#04141c" />
+          <stop offset="100%" stopColor="#020a10" />
+        </linearGradient>
+        <linearGradient id="expScan" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#22d3ee" stopOpacity="0.28" />
+          <stop offset="100%" stopColor="#22d3ee" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <rect width="420" height="340" fill="url(#expBg)" rx="14" />
+      <circle cx="340" cy="50" r="90" fill="#22d3ee" opacity="0.07" />
+      <circle cx="60" cy="300" r="70" fill="#ff4d6d" opacity="0.05" />
+
+      {/* scanline sweep */}
+      <rect x="34" y="54" width="352" height="86" fill="url(#expScan)" />
+      <line x1="34" y1="54" x2="386" y2="54" stroke="#22d3ee" strokeWidth="1.5" opacity="0.8" />
+
+      <g fontFamily="monospace">
+        <text x="34" y="38" fontSize="10" fill="#22d3ee" letterSpacing="2">
+          PASSIVE EXPOSURE MONITOR
+        </text>
+        <text x="386" y="38" fontSize="10" fill="#3d4a63" textAnchor="end">
+          DAILY
+        </text>
+      </g>
+
+      {/* severity rows */}
+      <g>
+        <rect x="34" y="70" width="352" height="26" rx="6" fill="#0d1f28" stroke="#ff4d6d" strokeOpacity="0.35" />
+        <rect x="34" y="70" width="3" height="26" fill="#ff4d6d" />
+        <circle cx="52" cy="83" r="3.5" fill="#ff4d6d" />
+        <text x="64" y="87" fontSize="9.5" fontFamily="monospace" fill="#ffffff">
+          certificate hostname mismatch
+        </text>
+        <text x="372" y="87" fontSize="8" fontFamily="monospace" fill="#ff4d6d" textAnchor="end">
+          HIGH
+        </text>
+      </g>
+      <g>
+        <rect x="34" y="102" width="352" height="26" rx="6" fill="#0d1f28" stroke="#ecaf3e" strokeOpacity="0.3" />
+        <rect x="34" y="102" width="3" height="26" fill="#ecaf3e" />
+        <circle cx="52" cy="115" r="3.5" fill="#ecaf3e" />
+        <text x="64" y="119" fontSize="9.5" fontFamily="monospace" fill="#ffffff">
+          HSTS header missing
+        </text>
+        <text x="372" y="119" fontSize="8" fontFamily="monospace" fill="#ecaf3e" textAnchor="end">
+          MED
+        </text>
+      </g>
+      <g>
+        <rect x="34" y="134" width="352" height="26" rx="6" fill="#0d1f28" stroke="#22d3ee" strokeOpacity="0.3" />
+        <rect x="34" y="134" width="3" height="26" fill="#22d3ee" />
+        <circle cx="52" cy="147" r="3.5" fill="#22d3ee" />
+        <text x="64" y="151" fontSize="9.5" fontFamily="monospace" fill="#ffffff">
+          new subdomain detected
+        </text>
+        <text x="372" y="151" fontSize="8" fontFamily="monospace" fill="#22d3ee" textAnchor="end">
+          LOW
+        </text>
+      </g>
+
+      {/* change alert */}
+      <g>
+        <rect x="34" y="176" width="352" height="44" rx="8" fill="#0a1a22" stroke="#22d3ee" strokeOpacity="0.3" />
+        <text x="48" y="196" fontSize="9" fontFamily="monospace" fill="#22d3ee">
+          ALERT · something changed since yesterday
+        </text>
+        <text x="48" y="211" fontSize="8" fontFamily="monospace" fill="#9fb0c8">
+          www now resolves outside the previous range
+        </text>
+      </g>
+
+      {/* pricing strip */}
+      <g>
+        <rect x="34" y="234" width="106" height="52" rx="8" fill="#0a1a22" stroke="#22d3ee" strokeOpacity="0.28" />
+        <text x="87" y="256" fontSize="13" fontFamily="monospace" fontWeight="700" fill="#ffffff" textAnchor="middle">
+          $19
+        </text>
+        <text x="87" y="272" fontSize="7.5" fontFamily="monospace" fill="#22d3ee" textAnchor="middle">
+          SOLO / MONTH
+        </text>
+      </g>
+      <g>
+        <rect x="152" y="234" width="106" height="52" rx="8" fill="#0a1a22" stroke="#22d3ee" strokeOpacity="0.28" />
+        <text x="205" y="256" fontSize="13" fontFamily="monospace" fontWeight="700" fill="#ffffff" textAnchor="middle">
+          $49
+        </text>
+        <text x="205" y="272" fontSize="7.5" fontFamily="monospace" fill="#22d3ee" textAnchor="middle">
+          PRO / MONTH
+        </text>
+      </g>
+      <g>
+        <rect x="270" y="234" width="116" height="52" rx="8" fill="#22d3ee" opacity="0.12" />
+        <text x="328" y="256" fontSize="9" fontFamily="monospace" fontWeight="700" fill="#22d3ee" textAnchor="middle">
+          FREE SCAN
+        </text>
+        <text x="328" y="272" fontSize="7.5" fontFamily="monospace" fill="#9fb0c8" textAnchor="middle">
+          NO ACCOUNT NEEDED
+        </text>
+      </g>
+
+      <text x="210" y="314" textAnchor="middle" fontSize="9" fontFamily="monospace" fill="#22d3ee" opacity="0.85">
+        certs · dns · tls · headers
+      </text>
+    </svg>
+  );
+}
+
 const projects = [
   {
     accent: "#22d3ee",
@@ -121,10 +305,10 @@ const projects = [
       "SP1D3R / CRAWLR token economy across a cross-chain bridge",
     ],
     metrics: [
-      { v: "10,000+", l: "active nodes" },
-      { v: "1M+", l: "searches" },
-      { v: "50+", l: "legal templates" },
-      { v: "99.9%", l: "uptime" },
+      { v: "On-chain", l: "encrypted crawl nodes" },
+      { v: "Live", l: "decentralized network" },
+      { v: "Automated", l: "data-removal requests" },
+      { v: "Hardened", l: "security-reviewed" },
     ],
     links: [
       { label: "Visit app", href: "https://spider.d31337m3.com/spider/", external: true },
@@ -155,16 +339,72 @@ const projects = [
       { v: "100%", l: "offline-capable UI" },
     ],
     links: [
-      { label: "Live preview", href: "https://d31337m3.com/bcw/", external: true },
+      { label: "Live preview", href: "https://rrdlabs.online/bcw/", external: true },
       { label: "GitHub", href: "https://github.com/rrdlabs/bcw-mobile", external: true },
     ],
     art: <BcwArt />,
+  },
+  {
+    accent: "#a78bfa",
+    chipClass: "border-cyber-violet/30 bg-cyber-violet/10 text-cyber-violet",
+    dot: "bg-cyber-violet",
+    title: "CODEPET",
+    tagline: "AI digital pet on the ESP32-S3 Touch AMOLED",
+    status: "In development · ESP32",
+    description:
+      "A pocket-sized AI companion living on a Waveshare ESP32-S3 Touch AMOLED — on-device conversation, a full LVGL touch UI, and firmware flashed over USB. Proof that 'hobby' hardware can ship with real-software discipline.",
+    features: [
+      "On-device AI conversation — no cloud, no subscription",
+      "Full LVGL touch UI running on ESP-IDF",
+      "Low-power AMOLED display tuned for daily-driver use",
+      "Open firmware pipeline from proto to release",
+    ],
+    metrics: [
+      { v: "ESP32-S3", l: "dual-core AI" },
+      { v: "AMOLED", l: "touch display" },
+      { v: "LVGL", l: "UI framework" },
+      { v: "On-device", l: "AI, no cloud" },
+    ],
+    links: [
+      { label: "GitHub org", href: "https://github.com/rrdlabs", external: true },
+      { label: "From proto to product", href: "#services", external: false },
+    ],
+    art: <CodpetArt />,
+  },
+  {
+    accent: "#22d3ee",
+    chipClass: "border-[#22d3ee]/30 bg-[#22d3ee]/10 text-[#22d3ee]",
+    dot: "bg-[#22d3ee]",
+    title: "Exposed",
+    tagline: "Continuous attack-surface monitoring as a subscription",
+    status: "Live · Paid product",
+    description:
+      "A hosted monitoring service that re-reads a domain's public footprint every day — Certificate Transparency logs, public DNS, the TLS handshake and ordinary HTTP headers — and emails you the moment any of it changes. Free scan first, $19/month to keep watching.",
+    features: [
+      "Passive only: crt.sh, public DNS, TLS handshake, HTTP response headers",
+      "Free anonymous scan with a shareable report, no account required",
+      "Daily re-scans with a plain-language diff of what changed",
+      "Alerts on new subdomains, expiring certs, DNS drift and missing headers",
+      "Self-serve billing via Lemon Squeezy as merchant of record",
+      "Free monitoring for registered charities and nonprofits",
+    ],
+    metrics: [
+      { v: "Daily", l: "re-scan cadence" },
+      { v: "$19", l: "Solo, per month" },
+      { v: "$49", l: "Pro, per month" },
+      { v: "Passive", l: "no active probing" },
+    ],
+    links: [
+      { label: "Run a free scan", href: "https://rrdlabs.online/exposed", external: true },
+      { label: "Source on GitHub", href: "https://github.com/rrdlabs/exposed", external: true },
+    ],
+    art: <ExposedArt />,
   },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative scroll-mt-24 border-y border-edge bg-abyss/60 py-24 md:py-32">
+    <section className="mx-auto max-w-6xl px-6 py-14 md:py-16">
       <div className="pointer-events-none absolute left-0 top-1/3 h-96 w-96 rounded-full bg-[#622286]/10 blur-[140px]" />
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeading

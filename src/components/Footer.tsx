@@ -14,7 +14,8 @@ const columns = [
     title: "Work",
     links: [
       { label: "Spider Protocol", href: "https://spider.d31337m3.com/spider/" },
-      { label: "BCW Mobile", href: "https://d31337m3.com/bcw/" },
+      { label: "BCW Mobile", href: "https://rrdlabs.online/bcw/" },
+      { label: "Exposed", href: "https://rrdlabs.online/exposed" },
       { label: "Spider nodes (ESP32)", href: "https://github.com/rrdlabs/Sp1d3r_Node_esp32" },
       { label: "Vuln research tools", href: "https://github.com/rrdlabs/seedy" },
     ],
@@ -22,6 +23,7 @@ const columns = [
   {
     title: "Elsewhere",
     links: [
+      { label: "Pricing", href: "#pricing" },
       { label: "GitHub", href: "https://github.com/rrdlabs" },
       { label: "Contact", href: "mailto:founder@rrdlabs.online" },
       { label: "Back to top", href: "#top" },
@@ -40,7 +42,7 @@ export default function Footer() {
                 R
               </span>
               <span className="font-mono text-sm tracking-tight text-mist">
-                rddlans<span className="text-neon">.</span>online
+                rrdlabs<span className="text-neon">.</span>online
               </span>
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-mist/80">
@@ -76,7 +78,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-edge pt-6 sm:flex-row sm:items-center">
           <p className="font-mono text-[11px] text-mist/60">
-            © {year} rddlans.online · Ranger-Andrews Research &amp; Development
+            © {year} rrdlabs.online · Ranger-Andrews Research &amp; Development
           </p>
           <p className="font-mono text-[11px] text-mist/60">
             Built in-house. Security-reviewed. <span className="text-neon">No templates.</span>
