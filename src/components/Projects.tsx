@@ -287,6 +287,136 @@ function ExposedArt() {
   );
 }
 
+function StreetArt() {
+  return (
+    <svg viewBox="0 0 420 340" className="h-full w-full" aria-hidden="true">
+      <defs>
+        <linearGradient id="stBg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#0c1509" />
+          <stop offset="100%" stopColor="#050a04" />
+        </linearGradient>
+        <linearGradient id="stScreen" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#16240f" />
+          <stop offset="100%" stopColor="#0a1206" />
+        </linearGradient>
+      </defs>
+      <rect width="420" height="340" fill="url(#stBg)" rx="14" />
+      <circle cx="350" cy="60" r="86" fill="#a3e635" opacity="0.07" />
+      <circle cx="70" cy="300" r="70" fill="#22d3ee" opacity="0.05" />
+
+      <g fontFamily="monospace">
+        <text x="34" y="34" fontSize="10" fill="#a3e635" letterSpacing="2">
+          OFFLINE-FIRST DIRECTORY
+        </text>
+        {/* The no-signal state is the whole point of the build, so it is the
+            one thing drawn as a hard, unambiguous badge. */}
+        <g>
+          <rect x="292" y="20" width="94" height="20" rx="10" fill="#a3e635" fillOpacity="0.14" stroke="#a3e635" strokeOpacity="0.5" />
+          <path d="M300 33l10-9" stroke="#a3e635" strokeWidth="2" strokeLinecap="round" />
+          <path d="M303 24a7 7 0 016 0" stroke="#a3e635" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+          <circle cx="305" cy="35" r="1.8" fill="#a3e635" />
+          <text x="316" y="34" fontSize="9" fontWeight="700" fill="#a3e635">
+            NO SIGNAL
+          </text>
+        </g>
+      </g>
+
+      <g transform="translate(92 52)">
+        <rect x="0" y="0" width="236" height="268" rx="24" fill="#080d05" stroke="#2c3f1c" strokeWidth="2" />
+        <rect x="88" y="8" width="60" height="6" rx="3" fill="#2c3f1c" />
+        <rect x="12" y="24" width="212" height="232" rx="16" fill="url(#stScreen)" />
+
+        {/* crisis bar, the four numbers reachable above the fold */}
+        <text x="20" y="38" fontSize="6" fill="#7d8f6b" letterSpacing="1.2">
+          NEED HELP RIGHT NOW
+        </text>
+        <g fontFamily="monospace" fontSize="6.5" fontWeight="700">
+          <rect x="20" y="44" width="46" height="16" rx="4" fill="#a3e635" fillOpacity="0.16" stroke="#a3e635" strokeOpacity="0.55" />
+          <text x="43" y="55" textAnchor="middle" fill="#a3e635">911</text>
+          <rect x="70" y="44" width="46" height="16" rx="4" fill="#a3e635" fillOpacity="0.16" stroke="#a3e635" strokeOpacity="0.55" />
+          <text x="93" y="55" textAnchor="middle" fill="#a3e635">988</text>
+          <rect x="120" y="44" width="46" height="16" rx="4" fill="#1d2a13" stroke="#2c3f1c" />
+          <text x="143" y="55" textAnchor="middle" fill="#9fb0c8">211</text>
+          <rect x="170" y="44" width="46" height="16" rx="4" fill="#1d2a13" stroke="#2c3f1c" />
+          <text x="193" y="55" textAnchor="middle" fill="#9fb0c8">811</text>
+        </g>
+
+        {/* search field */}
+        <rect x="20" y="68" width="196" height="20" rx="6" fill="#101a09" stroke="#2c3f1c" />
+        <circle cx="31" cy="78" r="3.4" stroke="#7d8f6b" strokeWidth="1.4" fill="none" />
+        <line x1="33.5" y1="80.5" x2="36" y2="83" stroke="#7d8f6b" strokeWidth="1.4" strokeLinecap="round" />
+        <text x="42" y="81" fontFamily="monospace" fontSize="7" fill="#7d8f6b">
+          shelter tonight
+        </text>
+
+        {/* category chips */}
+        <g fontFamily="monospace" fontSize="5.5" letterSpacing="0.6">
+          <rect x="20" y="94" width="42" height="11" rx="5.5" fill="#a3e635" fillOpacity="0.18" />
+          <text x="41" y="102" textAnchor="middle" fill="#a3e635">SHELTER</text>
+          <rect x="66" y="94" width="36" height="11" rx="5.5" fill="none" stroke="#2c3f1c" />
+          <text x="84" y="102" textAnchor="middle" fill="#7d8f6b">CRISIS</text>
+          <rect x="106" y="94" width="30" height="11" rx="5.5" fill="none" stroke="#2c3f1c" />
+          <text x="121" y="102" textAnchor="middle" fill="#7d8f6b">FOOD</text>
+          <rect x="140" y="94" width="34" height="11" rx="5.5" fill="none" stroke="#2c3f1c" />
+          <text x="157" y="102" textAnchor="middle" fill="#7d8f6b">HEALTH</text>
+        </g>
+
+        {/* listing rows: name, category, and a number you can actually tap */}
+        <g fontFamily="monospace">
+          <rect x="20" y="114" width="196" height="30" rx="6" fill="#111c0a" stroke="#22330f" />
+          <rect x="27" y="121" width="4" height="16" rx="2" fill="#a3e635" />
+          <text x="38" y="128" fontSize="7.5" fontWeight="700" fill="#eafcec">
+            Tribal Council Wellness
+          </text>
+          <text x="38" y="138" fontSize="5.5" fill="#7d8f6b" letterSpacing="0.5">
+            SHELTER · OPEN 24 HOURS
+          </text>
+          <text x="209" y="133" textAnchor="end" fontSize="8" fontWeight="700" fill="#a3e635">
+            306-249-5415
+          </text>
+
+          <rect x="20" y="150" width="196" height="30" rx="6" fill="#111c0a" stroke="#22330f" />
+          <rect x="27" y="157" width="4" height="16" rx="2" fill="#a3e635" />
+          <text x="38" y="164" fontSize="7.5" fontWeight="700" fill="#eafcec">
+            Interval House
+          </text>
+          <text x="38" y="174" fontSize="5.5" fill="#7d8f6b" letterSpacing="0.5">
+            VIOLENCE · 24 HOURS
+          </text>
+          <text x="209" y="169" textAnchor="end" fontSize="8" fontWeight="700" fill="#a3e635">
+            306-244-0185
+          </text>
+
+          {/* the closure flag: shown on the card, not buried on the detail page */}
+          <rect x="20" y="186" width="196" height="34" rx="6" fill="#1a1410" stroke="#ecaf3e" strokeOpacity="0.45" />
+          <rect x="27" y="193" width="4" height="20" rx="2" fill="#ecaf3e" />
+          <text x="38" y="200" fontSize="7.5" fontWeight="700" fill="#f6e7cf">
+            Prairie Harm Reduction
+          </text>
+          <text x="38" y="211" fontSize="6" fontWeight="700" fill="#ecaf3e">
+            CLOSED APRIL 2026 · DO NOT GO
+          </text>
+        </g>
+
+        {/* source provenance, the bit that makes the data auditable */}
+        <g fontFamily="monospace">
+          <rect x="20" y="228" width="196" height="20" rx="6" fill="#0d1507" stroke="#22330f" strokeDasharray="3 3" />
+          <circle cx="31" cy="238" r="3" fill="#a3e635" />
+          <text x="40" y="241" fontSize="6" fill="#7d8f6b">
+            64 / 81 entries sourced · read 2026-09-28
+          </text>
+        </g>
+      </g>
+
+      <g fontFamily="monospace">
+        <text x="210" y="330" textAnchor="middle" fontSize="9" fill="#a3e635" opacity="0.85">
+          81 services · 13 categories · 0 trackers
+        </text>
+      </g>
+    </svg>
+  );
+}
+
 const projects = [
   {
     accent: "#22d3ee",
@@ -399,6 +529,35 @@ const projects = [
       { label: "Source on GitHub", href: "https://github.com/rrdlabs/exposed", external: true },
     ],
     art: <ExposedArt />,
+  },
+  {
+    accent: "#a3e635",
+    chipClass: "border-volt/30 bg-volt/10 text-volt",
+    dot: "bg-volt",
+    title: "Saskatoon Street Project",
+    tagline: "Offline-first directory of the services you need to actually reach",
+    status: "Live PWA · Open source",
+    description:
+      "A directory of the services someone on the street in Saskatoon actually needs to reach — crisis, shelter, food, health, harm reduction, legal — built for the case where your phone has no bars and you need a number, not a website. The whole directory ships inside the app and works with the radio off.",
+    features: [
+      "Installs to the home screen; the entire directory is in the bundle, not fetched",
+      "Works with no signal — search, category filters, and every number available offline",
+      "81 services across 13 categories, from 911 to tenancy clinics",
+      "Every entry records the page it was read from and the date, so the data is auditable",
+      "Flags closures, permit expiries, and seasonal services before you walk across town",
+      "No accounts, no analytics, no cookies — nothing about a visit leaves the device",
+    ],
+    metrics: [
+      { v: "81", l: "services listed" },
+      { v: "13", l: "categories" },
+      { v: "100%", l: "works offline" },
+      { v: "0", l: "trackers, no accounts" },
+    ],
+    links: [
+      { label: "Open the directory", href: "https://rrdlabs.online/streetproject/", external: true },
+      { label: "Source on GitHub", href: "https://github.com/rrdlabs/saskatoon-street-project", external: true },
+    ],
+    art: <StreetArt />,
   },
 ];
 
